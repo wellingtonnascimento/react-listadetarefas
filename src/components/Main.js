@@ -13,7 +13,7 @@ import './Main.css';
 export default class Main extends Component {
   state = {
     novaTarefa: '',
-    terefas: [],
+    tarefas: [],
   };
 
   handleSubmit = (e) => {
@@ -38,7 +38,7 @@ export default class Main extends Component {
   }
 
   render() {
-    const { novaTarefa, terefas } = this.state;
+    const { novaTarefa, tarefas } = this.state;
 
     return (
       <div className="main">
@@ -56,7 +56,7 @@ export default class Main extends Component {
         </form>
 
         <ul className="tarefas">
-          {terefas.map((tarefa) => (
+          {tarefas.map((tarefa) => (
             <li key={tarefa}>
               {tarefa}
               <span>
